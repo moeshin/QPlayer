@@ -5,7 +5,7 @@ Dome: https://www.littlehands.site/
 
 [GitHub 地址](https://github.com/moeshin/QPlayer) | [GitHub 下载](https://codeload.github.com/moeshin/QPlayer/zip/master)
 
-##特点
+## 特点
 - 增加进度条，更直观调整进度
 - 增加歌词
 
