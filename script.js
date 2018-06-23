@@ -196,7 +196,6 @@ $(function () {
 	//获取播放歌单列表
 	$.ajax({
 		url: api1,
-		dataType: 'JSONP',
 		data: {
 			type: 'list',
 			id: q.id
@@ -256,7 +255,6 @@ $(function () {
 					});
 			$.ajax({
 				url: api2,
-				dataType: 'JSONP',
 				data: {
 					url: 'https://music.163.com/song/media/outer/url?id='+id,
 					type: 1
@@ -309,7 +307,6 @@ $(function () {
 		$lyricLi = $();
 		$.ajax({
 			url: api1,
-			dataType: 'JSONP',
 			data: {
 				type: 'lyric',
 				id: data.id
