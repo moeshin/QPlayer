@@ -26,6 +26,9 @@ Demo: https://www.littlehands.site/
 [API-Redirect](https://github.com/moeshin/API-Redirect)|[小さな手は](https://github.com/moeshin)
 
 ## 更新
+**2018.01.25 v1.0.2**
+- 修复API返回值发生变化后的错误
+
 **2018.06.18 v1.0.1**
 - 资源http与https自动调整（即 Firefox 不安全不信任不能播放问题）
 - 减少后台报错
