@@ -269,6 +269,8 @@
 	-webkit-font-smoothing: antialiased;
 }
 #QPlayer .lyric {
+	position: absolute;
+	left: 250px;
 	float: left;
 	width: 150px;
 	height: 0;
