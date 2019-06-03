@@ -51,6 +51,7 @@
 	}
 }
 #QPlayer {
+	z-index: 100;
 	position: fixed;
 	left: -250px;
 	bottom: 50px;
