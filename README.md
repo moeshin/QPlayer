@@ -1,7 +1,7 @@
 # QPlayer
 根据 [Jrohy](https://github.com/Jrohy) 的 [QPlayer](https://github.com/Jrohy/QPlayer) 重做的一款简洁小巧的HTML5底部悬浮音乐播放器
 
-Demo: https://www.littlehands.site/
+Demo: https://moeshin.github.io/QPlayer/
 
 [GitHub 地址](https://github.com/moeshin/QPlayer) | [GitHub 下载](https://codeload.github.com/moeshin/QPlayer/zip/master)
 
