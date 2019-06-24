@@ -197,7 +197,7 @@ $(function () {
 	$.ajax({
 		url: api1,
 		data: {
-			type: 'list',
+			type: q.type,
 			id: q.id
 		},
 		success: function (json) {
