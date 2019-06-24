@@ -179,14 +179,14 @@ $(function () {
 			 * 
 			 * @link https://github.com/moeshin/API-NeteaseMusic/
 			 */
-			api1 = '//api.littlehands.site/NeteaseMusic/',
+			api1 = 'https://api.littlehands.site/NeteaseMusic/',
 			
 			/**
 			 * 重定向API
 			 * 
 			 * @link https://github.com/moeshin/API-Redirect/
 			 */
-			api2 = '//api.littlehands.site/Redirect/',
+			api2 = 'https://api.littlehands.site/Redirect/',
 			
 			lyricRegex1 = /(?:^|\n)((?:\[\d\d:\d\d\.\d{2,3}\])+)(.*)/g;
 			lyricRegex2 = /\[(\d\d):(\d\d\.\d{2,3})\]/g;
@@ -267,7 +267,7 @@ $(function () {
 						q.error();
 						return;
 					}
-					audio.src = url.replace(/^http(s|):/, '');
+					audio.src = url.replace(/^http:\/\//, 'https://');
 					q.playId = id;
 					if ($player.hasClass('playing'))
 						audio.play();
@@ -297,7 +297,7 @@ $(function () {
 		$listLi.removeClass('current').eq(n).addClass('current');
 		var data = q.current = QPlayer.list[n];
 		$title.html('<strong>'+data.name+'</strong><span> - </span><span class="artist">'+data.artist.join('/')+'</span>');
-		$cover.attr('src', data.pic.replace(/^http(s|):/i,''));
+		$cover.attr('src', data.pic.replace(/^http:\/\//i,'https://'));
 		$already.width('0%');
 		$timer.text('00:00');
 		$lyricOl.addClass('no').html('<li>暂无歌词，请欣赏</li>');
