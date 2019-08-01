@@ -262,8 +262,8 @@ $(function () {
 				success: function (json) {
 					if (id !== q.current.id)
 						return;
-					var url;
-					if ((url = json[json.length - 1].url) == 'http://music.163.com/404') {
+					var url = json[json.length - 1].url;
+					if (/^https?:\/\/music.163.com\/404\b/.test(url)) {
 						q.error();
 						return;
 					}
