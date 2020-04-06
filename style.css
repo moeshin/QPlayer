@@ -56,6 +56,7 @@
 	left: -250px;
 	bottom: 50px;
 	transition: transform .8s;
+	pointer-events: none;
 }
 #QPlayer.pop {
 	transform: translateX(250px);
@@ -270,8 +271,6 @@
 	-webkit-font-smoothing: antialiased;
 }
 #QPlayer .lyric {
-	position: absolute;
-	left: 250px;
 	float: left;
 	width: 150px;
 	height: 0;
@@ -316,4 +315,7 @@
 }
 #QPlayer .more, #QPlayer.pop .more.lyric-show {
 	transform: translateX(-250px);
+}
+#QPlayer .body, #QPlayer .list, #QPlayer .lyric {
+	pointer-events: auto;
 }
