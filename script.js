@@ -198,6 +198,9 @@ $(function () {
 			lyricRegex2 = /\[(\d\d):(\d\d\.\d{2,3})\]/g;
 		
 	q.list = [];
+	if (!q.type) {
+		q.type = 'list';
+	}
 	
 	//获取播放歌单列表
 	$.ajax({
